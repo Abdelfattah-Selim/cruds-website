@@ -1,0 +1,84 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container py-5">
+
+
+
+        <div class="">
+
+            <div class="mb-3">
+
+                <label for="ProductName">Product Name</label>
+                <input type="text" class="form-control" id="ProductName" >
+            </div>
+
+            <div class="mb-3">
+
+                <label for="ProductPrice">Product Price</label>
+                <input type="number" class="form-control" id="ProductPrice">
+            </div>
+
+            <div class="mb-3">
+
+                <label for="ProductCategory">Product Category</label>
+
+                <select class="form-select" id="ProductCategory">
+
+                    <option value="tv">Tv</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="labtop">labtop</option>
+                </select>
+            </div>
+            <div class="mb-3">
+
+                <label for="ProductDescription">Product Description</label>
+                <textarea class="form-control" id="ProductDescription">
+                </textarea>
+            </div>
+
+        </div>
+
+        <button class="btn btn-outline-primary" onclick="addProduct()" >Add Product</button>
+        <button class="btn btn-outline-danger" onclick="cleardata()">clear Form</button>
+
+
+
+    </div>
+
+
+    <input type="text"  onkeyup="searchClick()" id="search" placeholder="Search...." class="form-control  w-50 mx-auto">
+
+
+
+    <table class="table  table-striped w-75 mx-auto my-4">
+
+        <thead>
+
+            <th>index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCategory</th>
+            <th>ProductDescription</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
